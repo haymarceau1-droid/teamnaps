@@ -697,19 +697,18 @@
 
   function renderCoverage() {
     var grid = $('coverage-grid');
-    var today = codeForDay(getCurrentDay());
     var pfs = getPlateformes();
+
+    var pfCounts = {};
+    for (var bi = 0; bi < appData.benevoles.length; bi++) {
+      var bpf = appData.benevoles[bi].plateforme;
+      pfCounts[bpf] = (pfCounts[bpf] || 0) + 1;
+    }
 
     grid.innerHTML = '';
     for (var pi = 0; pi < pfs.length; pi++) {
       var pf = pfs[pi];
-      var daySlots = appData.planning && appData.planning[today] || [];
-      var active = 0;
-      for (var si = 0; si < daySlots.length; si++) {
-        if (daySlots[si].plateforme === pf) {
-          active += daySlots[si].total || 0;
-        }
-      }
+      var active = pfCounts[pf] || 0;
       grid.innerHTML += '<div class="coverage-item">' +
         '<div class="coverage-item__name">' + pf + '</div>' +
         '<div class="coverage-item__count">' + active + '</div>' +
