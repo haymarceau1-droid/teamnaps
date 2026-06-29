@@ -253,7 +253,7 @@
   function renderView() {
     if (!session || !appData) return;
 
-    if (session.role === 'A') {
+    if (session.role === 'A' || session.role === 'R') {
       openAdmin();
       return;
     }
@@ -594,6 +594,7 @@
     // Gather all unique shift names across all days
     var allShiftNames = [];
     var seen = {};
+    var shiftOrder = { 'Matin': 1, 'Soirée Jeudi': 2, 'Soir': 3, 'Nuit': 4 };
     for (var dc = 0; dc < DAY_CODES.length; dc++) {
       var daySlots = appData.planning && appData.planning[DAY_CODES[dc]];
       if (!daySlots) continue;
@@ -602,6 +603,9 @@
         if (!seen[sn]) { seen[sn] = true; allShiftNames.push(sn); }
       }
     }
+    allShiftNames.sort(function (a, b) {
+      return (shiftOrder[a] || 99) - (shiftOrder[b] || 99);
+    });
 
     var html = '<div class="cal-grid-wrap"><div class="cal-grid cal-grid--planning">';
 
