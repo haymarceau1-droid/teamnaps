@@ -440,6 +440,10 @@
     }
     window.print();
   });
+  var pdfBtnB = $('pdf-btn-b');
+  if (pdfBtnB) pdfBtnB.addEventListener('click', function () { window.print(); });
+  var pdfBtnA = $('pdf-btn-a');
+  if (pdfBtnA) pdfBtnA.addEventListener('click', function () { window.print(); });
 
   var _calMode = '4days';
   var _calDay = 'jeudi';
