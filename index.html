@@ -21,6 +21,39 @@
   <!-- OFFLINE BANNER -->
   <div id="offline-banner" class="offline-banner">Données non actualisées (mode hors-ligne)</div>
 
+  <!-- SIDEBAR (desktop) -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__header">
+      <img src="logo.png" alt="Hellfest" class="sidebar__logo">
+      <div class="sidebar__title" id="sidebar-username"></div>
+      <div class="sidebar__sub" id="sidebar-userrole"></div>
+    </div>
+    <nav class="sidebar__nav">
+      <button class="sidebar__link" id="sidebar-calendar">Calendrier</button>
+      <button class="sidebar__link" id="sidebar-plan">Plan</button>
+      <button class="sidebar__link sidebar__link--admin" id="sidebar-admin">Admin</button>
+    </nav>
+    <div class="sidebar__footer">
+      <div class="sidebar__contacts">
+        <div class="sidebar__contact">
+          <div class="sidebar__contact-label">CE Stage</div>
+          <div class="sidebar__contact-row">
+            <span class="sidebar__contact-value" id="sidebar-ce-name"></span>
+            <a class="sidebar__contact-phone" id="sidebar-ce-phone" href="#"></a>
+          </div>
+        </div>
+        <div class="sidebar__contact">
+          <div class="sidebar__contact-label">Responsable</div>
+          <div class="sidebar__contact-row">
+            <span class="sidebar__contact-value" id="sidebar-r-name"></span>
+            <a class="sidebar__contact-phone" id="sidebar-r-phone" href="#"></a>
+          </div>
+        </div>
+      </div>
+      <button class="sidebar__logout" id="sidebar-logout">Déconnexion</button>
+    </div>
+  </aside>
+
   <!-- ===== VIEW: LOGIN ===== -->
   <section id="view-login" class="view">
     <div class="login">
@@ -216,16 +249,6 @@
       <p>Aucune donnée n'est disponible hors-ligne. Reconnectez-vous au réseau et rechargez la page.</p>
     </div>
   </section>
-
-  <!-- CONTACT BAR (persistent) -->
-  <div class="contact-bar" id="contact-bar">
-    <a id="contact-bar-ce" href="#">
-      <span>CE Stage</span>
-    </a>
-    <a id="contact-bar-r" href="#">
-      <span>Responsable</span>
-    </a>
-  </div>
 
   <!-- LIGHTBOX -->
   <div id="lightbox" class="lightbox" style="display:none">

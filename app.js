@@ -96,19 +96,12 @@
     document.querySelectorAll('.view').forEach(function (v) { v.classList.remove('active'); });
     var view = $(viewId);
     if (view) view.classList.add('active');
-    var contactBar = $('contact-bar');
-    if (contactBar) {
-      contactBar.style.display = (viewId === 'view-login' || viewId === 'view-offline') ? 'none' : 'flex';
-    }
     _currentView = viewId;
     if (typeof gsap !== 'undefined') {
       gsap.fromTo(view, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.35, ease: 'power2.out' });
       if (viewId === 'view-login') {
         gsap.fromTo('.login__logo', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out', delay: 0.05 });
         gsap.fromTo('.form-group, .btn-primary, .error-msg', { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, stagger: { each: 0.06 }, ease: 'power2.out', delay: 0.15 });
-      }
-      if (viewId !== 'view-login' && viewId !== 'view-offline') {
-        gsap.fromTo('.contact-bar', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: 'power2.out', delay: 0.1 });
       }
     }
   }
@@ -193,6 +186,16 @@
 
   /* ─── ADMIN ─── */
   $('admin-btn').addEventListener('click', openAdmin);
+
+  /* ─── SIDEBAR ─── */
+  var sbCalendar = $('sidebar-calendar');
+  var sbPlan = $('sidebar-plan');
+  var sbAdmin = $('sidebar-admin');
+  var sbLogout = $('sidebar-logout');
+  if (sbCalendar) sbCalendar.addEventListener('click', openCalendar);
+  if (sbPlan) sbPlan.addEventListener('click', openMap);
+  if (sbAdmin) sbAdmin.addEventListener('click', openAdmin);
+  if (sbLogout) sbLogout.addEventListener('click', logout);
 
   var _adminSearch = '';
   var _adminPf = 'all';
@@ -496,6 +499,25 @@
       showView('view-responsable');
     }
     updateContacts();
+    updateSidebar();
+  }
+
+  /* ─── SIDEBAR ─── */
+  function updateSidebar() {
+    if (!session) return;
+    var nameEl = $('sidebar-username');
+    var roleEl = $('sidebar-userrole');
+    var adminBtn = $('sidebar-admin');
+    if (nameEl) nameEl.textContent = session.nom;
+    if (roleEl) {
+      roleEl.textContent = session.role === 'B' ? 'Bénévole'
+        : session.role === 'R' ? 'Responsable'
+        : session.role === 'CE' ? "Chef d'équipe"
+        : 'Admin';
+    }
+    if (adminBtn) {
+      adminBtn.style.display = (session.role === 'R' || session.role === 'CE' || session.role === 'A') ? '' : 'none';
+    }
   }
 
   /* ─── CONTACTS ─── */
@@ -508,22 +530,24 @@
     var r = appData.responsable;
 
     if (ce) {
-      var barCe = $('contact-bar-ce');
-      barCe.innerHTML = '<span>CE Stage: ' + ce.telephone + '</span>';
-      barCe.href = 'tel:' + ce.telephone;
       var nameCe = document.getElementById('contact-ce-name');
       var phoneCe = document.getElementById('contact-ce-phone');
       if (nameCe) nameCe.textContent = ce.nom;
       if (phoneCe) { phoneCe.textContent = ce.telephone; phoneCe.href = 'tel:' + ce.telephone; }
+      var sbCeName = document.getElementById('sidebar-ce-name');
+      var sbCePhone = document.getElementById('sidebar-ce-phone');
+      if (sbCeName) sbCeName.textContent = ce.nom;
+      if (sbCePhone) { sbCePhone.textContent = ce.telephone; sbCePhone.href = 'tel:' + ce.telephone; }
     }
     if (r) {
-      var barR = $('contact-bar-r');
-      barR.innerHTML = '<span>Responsable: ' + r.telephone + '</span>';
-      barR.href = 'tel:' + r.telephone;
       var nameR = document.getElementById('contact-r-name');
       var phoneR = document.getElementById('contact-r-phone');
       if (nameR) nameR.textContent = r.nom;
       if (phoneR) { phoneR.textContent = r.telephone; phoneR.href = 'tel:' + r.telephone; }
+      var sbRName = document.getElementById('sidebar-r-name');
+      var sbRPhone = document.getElementById('sidebar-r-phone');
+      if (sbRName) sbRName.textContent = r.nom;
+      if (sbRPhone) { sbRPhone.textContent = r.telephone; sbRPhone.href = 'tel:' + r.telephone; }
     }
   }
 
