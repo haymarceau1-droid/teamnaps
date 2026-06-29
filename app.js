@@ -947,7 +947,10 @@
       html += '<div class="admin-card">';
       html += '<div class="admin-card__header">';
       html += '<div><div class="admin-card__name">' + vol.nom + '</div><div class="admin-card__pf">' + vol.plateforme + '</div></div>';
-      html += '<span class="badge badge--venir" style="cursor:pointer" data-nom="' + vol.nom + '">Voir</span>';
+      html += '<div style="display:flex;align-items:center;gap:var(--space-sm)">' +
+        (vol.telephone ? '<a class="btn-icon btn-icon--call" href="tel:' + vol.telephone.replace(/[\s]/g, '') + '" aria-label="Appeler"><span class="material-symbols-outlined">call</span></a>' : '') +
+        '<span class="badge badge--venir" style="cursor:pointer" data-nom="' + vol.nom + '">Voir</span>' +
+        '</div>';
       html += '</div>';
       html += '<div class="admin-card__grid">';
       for (var d = 0; d < DAY_CODES.length; d++) {
