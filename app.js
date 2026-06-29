@@ -879,6 +879,8 @@
   function openAdmin() {
     _adminSearch = '';
     _adminPf = 'all';
+    var titleEl = $('admin-header-title');
+    if (titleEl) titleEl.textContent = session.role === 'R' ? 'Responsable' : 'Admin';
     renderAdminChips();
     renderAdminList();
     showView('view-admin');
