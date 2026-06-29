@@ -804,6 +804,7 @@
         '<div class="benevole-row__name">' + vol.nom + '</div>' +
         '<div class="benevole-row__meta">' + vol.plateforme + ' &middot; ' + todayShift + '</div>' +
         '</div>' +
+        (vol.telephone ? '<a class="btn-icon btn-icon--call" href="tel:' + vol.telephone.replace(/[\s]/g, '') + '" aria-label="Appeler"><span class="material-symbols-outlined">call</span></a>' : '') +
         '<span class="badge ' + statusClass + '">' + statusText + '</span>' +
         '</div></div>';
     }
