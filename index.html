@@ -157,13 +157,10 @@
   <!-- ===== VIEW: FICHE BÉNÉVOLE ===== -->
   <section id="view-fiche" class="view">
     <div class="header" style="border-bottom:none;margin-bottom:8px;padding-bottom:0">
-      <div class="header__left">
-        <img src="logo.png" alt="Hellfest" class="header__logo">
+      <div class="header__row header__row--inline">
+        <button class="btn-icon" id="fiche-back" aria-label="Retour"><span class="material-symbols-outlined">arrow_back</span></button>
         <div class="header__title" style="font-size:var(--text-lg)">Fiche</div>
       </div>
-    </div>
-    <div class="back-row">
-      <button id="fiche-back" aria-label="Retour">&#8592; Retour</button>
     </div>
 
     <div class="fiche-header">
@@ -198,19 +195,19 @@
   <!-- ===== VIEW: CALENDRIER ===== -->
   <section id="view-calendar" class="view">
     <div class="header">
-      <div class="header__left">
-        <img src="logo.png" alt="Hellfest" class="header__logo">
-        <div class="header__title">Calendrier</div>
+      <div class="header__row header__row--inline" style="justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:var(--space-sm)">
+          <button class="btn-icon" id="calendar-back" aria-label="Retour"><span class="material-symbols-outlined">arrow_back</span></button>
+          <div class="header__title">Calendrier</div>
+        </div>
+        <button class="btn btn-sm btn-primary" id="cal-pdf-btn" style="white-space:nowrap">&#8595; PDF</button>
       </div>
-      <button class="btn btn-sm btn-secondary" id="calendar-back">Retour</button>
     </div>
 
     <div class="cal-mode">
       <button class="cal-mode__btn cal-mode__btn--active" data-mode="4days">4 Jours</button>
       <button class="cal-mode__btn" data-mode="day">Jour</button>
     </div>
-
-    <button class="btn btn-primary" id="cal-pdf-btn" style="margin-bottom:var(--space-sm)">&#8595; Télécharger PDF</button>
 
     <div class="cal-print-header">
       <h1>Calendrier Hellfest</h1>

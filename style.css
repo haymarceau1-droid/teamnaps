@@ -138,6 +138,11 @@ body {
   gap: var(--space-md);
   width: 100%;
 }
+.header__row--inline {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--space-sm);
+}
 
 /* ─── LOGIN ─── */
 .login {
