@@ -29,12 +29,12 @@
   --font-body: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'Courier New', monospace;
 
-  --text-xs: 12.8px;
-  --text-sm: 12.8px;
-  --text-base: 15px;
-  --text-lg: 19.2px;
-  --text-xl: 23.04px;
-  --text-2xl: 88px;
+  --text-xs: 15px;
+  --text-sm: 16px;
+  --text-base: 18px;
+  --text-lg: 22px;
+  --text-xl: 26px;
+  --text-2xl: 96px;
 
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -724,7 +724,7 @@ body {
   border-radius: var(--radius-sm);
   color: var(--color-text-muted);
   font-family: var(--font-body);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -751,7 +751,7 @@ body {
   border-radius: var(--radius-sm);
   color: var(--color-text-muted);
   font-family: var(--font-body);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -776,7 +776,7 @@ body {
 }
 .cal-slot__time {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   color: var(--color-text-muted);
   min-width: 32px;
   padding-top: var(--space-xs);
@@ -800,7 +800,7 @@ body {
   font-size: var(--text-xs);
 }
 .cal-shift__time {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--color-text-muted);
   font-family: var(--font-mono);
   margin-top: 1px;
@@ -827,7 +827,7 @@ body {
 }
 .cal-grid__header {
   font-family: var(--font-display);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -841,7 +841,7 @@ body {
 }
 .cal-grid__time {
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 10px;
   color: var(--color-text-muted);
   text-align: right;
   padding: 2px 4px;
@@ -860,7 +860,7 @@ body {
   background: rgba(0, 165, 48, 0.1);
 }
 .cal-grid__cell-scene {
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 1.1;
   color: var(--color-primary);
@@ -869,13 +869,13 @@ body {
   white-space: nowrap;
 }
 .cal-grid__cell-time {
-  font-size: 7px;
+  font-size: 9px;
   color: var(--color-text-muted);
   font-family: var(--font-mono);
   line-height: 1.1;
 }
 .cal-grid__cell-name {
-  font-size: 7px;
+  font-size: 9px;
   color: var(--color-text-muted);
   line-height: 1.1;
   overflow: hidden;
@@ -932,7 +932,7 @@ body {
   border-bottom: 1px solid var(--color-border);
 }
 .admin-card__shift {
-  font-size: 10px;
+  font-size: 12px;
   background: rgba(0, 165, 48, 0.08);
   border-radius: var(--radius-sm);
   padding: 3px 5px;
@@ -947,10 +947,10 @@ body {
 .admin-card__shift-time {
   color: var(--color-text-muted);
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
 }
 .admin-card__empty {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--color-text-dim);
   padding: 6px 0;
 }
