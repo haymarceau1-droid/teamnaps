@@ -272,6 +272,18 @@ body {
 .card--clickable:active {
   background: var(--color-surface-2);
 }
+.card--muted {
+  opacity: 0.5;
+}
+.card--total {
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary-l);
+}
+.card--muted .shift-item__shift,
+.card--muted .shift-item__hours,
+.card--muted .shift-item__time {
+  opacity: 0.6;
+}
 
 /* ─── BADGE ─── */
 .badge {
@@ -339,6 +351,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-md);
+  flex-wrap: wrap;
 }
 .shift-item__time {
   font-family: var(--font-mono);
@@ -356,6 +369,26 @@ body {
 }
 .shift-item__status {
   flex-shrink: 0;
+}
+.shift-item__day {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  min-width: 110px;
+  flex-shrink: 0;
+}
+.shift-item__shift {
+  flex: 1;
+  font-size: var(--text-base);
+}
+.shift-item__hours {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  min-width: 40px;
+  text-align: right;
 }
 
 /* ─── AVATAR ─── */
@@ -861,6 +894,77 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.cal-grid__cell-name--self {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: var(--text-sm);
+}
+.cal-grid--planning .cal-grid__time {
+  font-size: var(--text-xs);
+  text-align: left;
+  padding-left: var(--space-md);
+  white-space: nowrap;
+  min-width: 60px;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+}
+.cal-day-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-md);
+}
+.cal-day-grid__row {
+  display: flex;
+  gap: 2px;
+}
+.cal-day-grid__row--header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.cal-day-grid__cell {
+  flex: 1;
+  min-width: 80px;
+  background: var(--color-surface-2);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm);
+  font-size: var(--text-xs);
+}
+.cal-day-grid__cell--header {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  background: var(--color-surface-3);
+}
+.cal-day-grid__cell--label {
+  font-weight: 700;
+  font-size: var(--text-xs);
+  white-space: nowrap;
+  min-width: 80px;
+  background: var(--color-surface-1);
+}
+.cal-day-grid__cell--ok {
+  border-left: 3px solid var(--color-primary);
+}
+.cal-day-grid__cell--warn {
+  border-left: 3px solid var(--color-warning, #f59e0b);
+}
+.cal-day-grid__cell--empty {
+  color: var(--color-text-muted);
+}
+.cal-day-grid__total {
+  font-weight: 700;
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-xs);
+}
+.cal-day-grid__name {
+  font-size: 9px;
+  color: var(--color-text);
+  line-height: 1.3;
 }
 .cal-print-header {
   display: none;

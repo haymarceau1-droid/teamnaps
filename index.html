@@ -64,7 +64,20 @@
       </div>
       <div class="form-group">
         <label for="login-phone">Numéro de téléphone</label>
-        <input type="tel" id="login-phone" maxlength="10" placeholder="0612345678" autocomplete="tel">
+        <input type="tel" id="login-phone" maxlength="14" placeholder="06 04 33 21 81" autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <label for="login-role">Rôle</label>
+        <select id="login-role">
+          <option value="B">Bénévole</option>
+          <option value="CE">Chef d'équipe</option>
+          <option value="R">Responsable</option>
+          <option value="A">Admin</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="login-poste">Poste</label>
+        <select id="login-poste"></select>
       </div>
       <button class="btn btn-primary" id="login-btn">Se connecter</button>
       <div class="error-msg" id="login-error"></div>
@@ -182,7 +195,7 @@
       <div class="fiche-detail__value" id="fiche-plateforme"></div>
     </div>
 
-    <div class="section-title" style="margin-top:20px">Shifts du jour</div>
+    <div class="section-title" style="margin-top:20px">Shifts</div>
     <div id="fiche-shifts"></div>
   </section>
 
@@ -254,7 +267,6 @@
     </div>
   </div>
 
-  <script src="data.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="app.js"></script>
 </body>
