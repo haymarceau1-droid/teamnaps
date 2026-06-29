@@ -411,7 +411,6 @@
 
   function handleLogin() {
     var phone = $('login-phone').value.trim();
-    var role = $('login-role').value;
     var errorEl = $('login-error');
     errorEl.textContent = '';
 
@@ -426,14 +425,14 @@
 
     var volunteer = null;
 
-    if (role === 'B') {
-      for (var i = 0; i < appData.benevoles.length; i++) {
-        if (appData.benevoles[i].telephone === phone && appData.benevoles[i].role === 'B') {
-          volunteer = appData.benevoles[i];
-          break;
-        }
+    for (var i = 0; i < appData.benevoles.length; i++) {
+      if (appData.benevoles[i].telephone === phone && appData.benevoles[i].role === 'B') {
+        volunteer = appData.benevoles[i];
+        break;
       }
-    } else if (role === 'CE') {
+    }
+
+    if (!volunteer) {
       for (var j = 0; j < appData.chefs_equipe.length; j++) {
         if (appData.chefs_equipe[j].telephone === phone) {
           var ce = appData.chefs_equipe[j];
@@ -441,19 +440,19 @@
           break;
         }
       }
-    } else if (role === 'R') {
-      if (appData.responsable.telephone === phone) {
-        var r = appData.responsable;
-        volunteer = { id: 'R', nom: r.nom, prenom: r.nom, telephone: r.telephone, role: 'R', plateforme: '', genre: '' };
-      }
-    } else if (role === 'A') {
-      if (appData.admin && appData.admin.telephone === phone) {
-        volunteer = { id: 'A', nom: 'Admin', prenom: 'Admin', telephone: phone, role: 'A', plateforme: '', genre: '' };
-      }
+    }
+
+    if (!volunteer && appData.responsable && appData.responsable.telephone === phone) {
+      var r = appData.responsable;
+      volunteer = { id: 'R', nom: r.nom, prenom: r.nom, telephone: r.telephone, role: 'R', plateforme: '', genre: '' };
+    }
+
+    if (!volunteer && appData.admin && appData.admin.telephone === phone) {
+      volunteer = { id: 'A', nom: 'Admin', prenom: 'Admin', telephone: phone, role: 'A', plateforme: '', genre: '' };
     }
 
     if (!volunteer) {
-      errorEl.textContent = 'Aucun compte trouvé avec ce numéro et ce poste';
+      errorEl.textContent = 'Aucun compte trouvé avec ce numéro';
       return;
     }
 
