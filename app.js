@@ -444,6 +444,10 @@
   if (pdfBtnB) pdfBtnB.addEventListener('click', function () { window.print(); });
   var pdfBtnA = $('pdf-btn-a');
   if (pdfBtnA) pdfBtnA.addEventListener('click', function () { window.print(); });
+  var pdfBtnFiche = $('pdf-btn-fiche');
+  if (pdfBtnFiche) pdfBtnFiche.addEventListener('click', function () { window.print(); });
+  var pdfBtnR = $('pdf-btn-r');
+  if (pdfBtnR) pdfBtnR.addEventListener('click', function () { window.print(); });
 
   var _calMode = '4days';
   var _calDay = 'jeudi';
