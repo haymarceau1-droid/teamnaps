@@ -210,6 +210,13 @@
   $('calendar-btn-r').addEventListener('click', openCalendar);
   $('calendar-back').addEventListener('click', function () {
     if (!session) return;
+    if (_calViewingVolunteerId) {
+      _calViewingVolunteerId = null;
+      var titleEl = document.querySelector('#view-calendar .header__title');
+      if (titleEl) titleEl.textContent = 'Calendrier';
+      openAdmin();
+      return;
+    }
     if (session.role === 'B') showView('view-benevole');
     else showView('view-responsable');
   });
@@ -226,6 +233,7 @@
   var _calMode = '4days';
   var _calDay = 'jeudi';
   var _calDays = ['jeudi', 'vendredi', 'samedi', 'dimanche'];
+  var _calViewingVolunteerId = null;
 
   document.addEventListener('click', function (e) {
     var modeBtn = e.target.closest('.cal-mode__btn');
@@ -269,7 +277,8 @@
     for (var i = 0; i < appData.shifts.length; i++) {
       var s = appData.shifts[i];
       if (s.jour !== jour) continue;
-      if (session.role === 'B' && s.benevole_id !== session.id) continue;
+      if (_calViewingVolunteerId && s.benevole_id !== _calViewingVolunteerId) continue;
+      if (!_calViewingVolunteerId && session.role === 'B' && s.benevole_id !== session.id) continue;
       result.push(s);
     }
     return result;
@@ -959,7 +968,18 @@
     animateIn(container, '.admin-card', { y: 12, scale: 1 });
     container.querySelectorAll('.badge--venir').forEach(function (el) {
       el.addEventListener('click', function () {
-        showFiche(el.getAttribute('data-id'));
+        var volId = el.getAttribute('data-id');
+        _calViewingVolunteerId = volId;
+        var volName = '';
+        for (var vi2 = 0; vi2 < appData.benevoles.length; vi2++) {
+          if (appData.benevoles[vi2].id === volId) {
+            volName = appData.benevoles[vi2].prenom + ' ' + appData.benevoles[vi2].nom;
+            break;
+          }
+        }
+        var titleEl = document.querySelector('#view-calendar .header__title');
+        if (titleEl) titleEl.textContent = volName;
+        openCalendar();
       });
     });
   }
