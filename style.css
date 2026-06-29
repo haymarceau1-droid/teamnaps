@@ -54,6 +54,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+.material-symbols-outlined {
+  font-size: 22px;
+  line-height: 1;
+}
+
 body {
   font-family: var(--font-body);
   background: var(--color-bg);
@@ -1226,6 +1231,10 @@ body {
     background: var(--color-surface-2);
     color: var(--color-text);
   }
+  .sidebar__link .material-symbols-outlined {
+    font-size: 24px;
+    color: var(--color-primary);
+  }
   .sidebar__link--admin {
     /* visibility toggled via JS in app.js */
   }
@@ -1265,6 +1274,10 @@ body {
     font-family: var(--font-mono);
   }
   .sidebar__logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
     width: 100%;
     padding: var(--space-md);
     background: none;
@@ -1283,6 +1296,9 @@ body {
     background: var(--color-surface-2);
     color: var(--color-danger);
     border-color: var(--color-danger);
+  }
+  .sidebar__logout .material-symbols-outlined {
+    font-size: 20px;
   }
 
   /* Hide header nav buttons and floating contact bar on desktop */
