@@ -40,7 +40,6 @@
 
     function initApp(data) {
       appData = data;
-      populatePostes();
       hideLoader();
       if (session) renderView();
     }
@@ -167,39 +166,6 @@
   $('login-role').addEventListener('keydown', function (e) {
     if (e.key === 'Enter') handleLogin();
   });
-  $('login-poste').addEventListener('keydown', function (e) {
-    if (e.key === 'Enter') handleLogin();
-  });
-
-  $('login-role').addEventListener('change', populatePostes);
-
-  function populatePostes() {
-    var role = $('login-role').value;
-    var posteSelect = $('login-poste');
-    if (!posteSelect || !appData) return;
-    posteSelect.innerHTML = '';
-
-    var postes = [];
-    if (role === 'B') {
-      postes = getPlateformes();
-    } else if (role === 'CE') {
-      for (var j = 0; j < appData.chefs_equipe.length; j++) {
-        var p = appData.chefs_equipe[j].poste;
-        if (p && postes.indexOf(p) === -1) postes.push(p);
-      }
-    } else if (role === 'R') {
-      postes.push('Stage');
-    } else if (role === 'A') {
-      postes.push('Admin');
-    }
-    postes.sort();
-    for (var k = 0; k < postes.length; k++) {
-      var opt = document.createElement('option');
-      opt.value = postes[k];
-      opt.textContent = postes[k].charAt(0).toUpperCase() + postes[k].slice(1);
-      posteSelect.appendChild(opt);
-    }
-  }
 
   function normalizePhone(phone) {
     return phone.replace(/[\s\-\_]/g, '');
@@ -208,7 +174,6 @@
   function handleLogin() {
     var phone = normalizePhone($('login-phone').value.trim());
     var role = $('login-role').value;
-    var poste = $('login-poste').value;
     var errorEl = $('login-error');
     errorEl.textContent = '';
 
@@ -226,7 +191,7 @@
     if (role === 'B') {
       for (var i = 0; i < appData.benevoles.length; i++) {
         var bPhone = normalizePhone(appData.benevoles[i].telephone || '');
-        if (bPhone === phone && appData.benevoles[i].plateforme === poste) {
+        if (bPhone === phone) {
           volunteer = appData.benevoles[i];
           break;
         }
@@ -234,7 +199,7 @@
     } else if (role === 'CE') {
       for (var j = 0; j < appData.chefs_equipe.length; j++) {
         var cePhone = normalizePhone(appData.chefs_equipe[j].telephone || '');
-        if (cePhone === phone && appData.chefs_equipe[j].poste === poste) {
+        if (cePhone === phone) {
           var ce = appData.chefs_equipe[j];
           volunteer = { id: 'CE', nom: ce.nom, prenom: ce.nom, telephone: ce.telephone, role: 'CE', plateforme: ce.poste, genre: '' };
           break;

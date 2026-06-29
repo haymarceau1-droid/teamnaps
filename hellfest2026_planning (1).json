@@ -1,0 +1,1312 @@
+{
+  "festival": "Hellfest 2026",
+  "dates": {
+    "J18": "Jeudi 18 Juin 2026",
+    "V19": "Vendredi 19 Juin 2026",
+    "S20": "Samedi 20 Juin 2026",
+    "D21": "Dimanche 21 Juin 2026"
+  },
+  "benevoles": [
+    {
+      "nom": "Victoria Masson",
+      "genre": "F",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Soirée Jeudi 16:00→22:00",
+        "V19": "Matin 10:00→17:00",
+        "S20": "Matin 10:00→17:00",
+        "D21": "Matin 10:00→17:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "06 04 33 21 81"
+    },
+    {
+      "nom": "Milla Fabre",
+      "genre": "F",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Soirée Jeudi 16:00→22:00",
+        "V19": "Matin 10:00→17:00",
+        "S20": "Matin 10:00→17:00",
+        "D21": "Matin 10:00→17:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "07 00 13 38 90"
+    },
+    {
+      "nom": "Noémie Colin",
+      "genre": "F",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Soirée Jeudi 16:00→22:00",
+        "V19": "Matin 10:00→17:00",
+        "S20": "Matin 10:00→17:00",
+        "D21": "Non dispo"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 0,
+        "total": "18"
+      },
+      "telephone": "06 86 37 94 02"
+    },
+    {
+      "nom": "Romane Caron",
+      "genre": "F",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Nuit Jeudi 20:00→02:00",
+        "V19": "Soir 15:00→22:00",
+        "S20": "Soir 15:00→22:00",
+        "D21": "Matin 10:00→17:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "07 54 23 51 16"
+    },
+    {
+      "nom": "Giulia Faure",
+      "genre": "F",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Nuit Jeudi 20:00→02:00",
+        "V19": "Soir 15:00→22:00",
+        "S20": "Soir 15:00→22:00",
+        "D21": "Soir 15:00→22:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "06 55 94 07 81"
+    },
+    {
+      "nom": "Elisa Renault",
+      "genre": "F",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Soir 15:00→22:00",
+        "S20": "Soir 15:00→22:00",
+        "D21": "Soir 15:00→22:00"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "18"
+      },
+      "telephone": "07 18 49 59 31"
+    },
+    {
+      "nom": "Stella Fabre",
+      "genre": "F",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Soir 15:00→22:00"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "18"
+      },
+      "telephone": "06 34 13 16 47"
+    },
+    {
+      "nom": "Eliott Lambert",
+      "genre": "M",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Soirée Jeudi 16:00→22:00",
+        "V19": "Matin 10:00→17:00",
+        "S20": "Matin 10:00→17:00",
+        "D21": "Matin 10:00→17:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "07 25 53 41 92"
+    },
+    {
+      "nom": "Maël Dubois",
+      "genre": "M",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Soirée Jeudi 16:00→22:00",
+        "V19": "Matin 10:00→17:00",
+        "S20": "Matin 10:00→17:00",
+        "D21": "Matin 10:00→17:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "06 27 64 83 50"
+    },
+    {
+      "nom": "Timéo Lemaire",
+      "genre": "M",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Soirée Jeudi 16:00→22:00",
+        "V19": "Matin 10:00→17:00",
+        "S20": "Matin 10:00→17:00",
+        "D21": "Matin 10:00→17:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "06 05 64 13 95"
+    },
+    {
+      "nom": "Yanis Giraud",
+      "genre": "M",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Nuit Jeudi 20:00→02:00",
+        "V19": "Soir 15:00→22:00",
+        "S20": "Soir 15:00→22:00",
+        "D21": "Non dispo"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 0,
+        "total": "18"
+      },
+      "telephone": "06 76 72 42 38"
+    },
+    {
+      "nom": "Valentin Nicolas",
+      "genre": "M",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Nuit Jeudi 20:00→02:00",
+        "V19": "Soir 15:00→22:00",
+        "S20": "Soir 15:00→22:00",
+        "D21": "Soir 15:00→22:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "07 96 96 53 28"
+    },
+    {
+      "nom": "Bastien Girard",
+      "genre": "M",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Soir 15:00→22:00",
+        "S20": "Soir 15:00→22:00",
+        "D21": "Soir 15:00→22:00"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "18"
+      },
+      "telephone": "07 10 12 26 91"
+    },
+    {
+      "nom": "Quentin Meunier",
+      "genre": "M",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Soir 15:00→22:00"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "18"
+      },
+      "telephone": "07 69 78 48 01"
+    },
+    {
+      "nom": "Jade Rousseau",
+      "genre": "F",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Repos"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 0,
+        "total": "12"
+      },
+      "telephone": "07 51 46 27 04"
+    },
+    {
+      "nom": "Inès Mercier",
+      "genre": "F",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Repos"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 0,
+        "total": "12"
+      },
+      "telephone": "06 81 48 93 25"
+    },
+    {
+      "nom": "Lucas Fontaine",
+      "genre": "M",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Nuit Jeudi 20:00→02:00",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Repos"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 0,
+        "total": "18"
+      },
+      "telephone": "06 88 09 57 01"
+    },
+    {
+      "nom": "Théo Blanchard",
+      "genre": "M",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Repos"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 0,
+        "total": "12"
+      },
+      "telephone": "07 43 03 91 17"
+    },
+    {
+      "nom": "Raphaël Costa",
+      "genre": "M",
+      "plateforme": "Mainstage",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Repos"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 0,
+        "total": "12"
+      },
+      "telephone": "06 82 27 82 48"
+    },
+    {
+      "nom": "Mélina Guerin",
+      "genre": "F",
+      "plateforme": "Temple/Altar",
+      "shifts": {
+        "J18": "Soirée Jeudi 16:00→22:00",
+        "V19": "Matin 10:00→17:00",
+        "S20": "Matin 10:00→17:00",
+        "D21": "Matin 10:00→17:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "07 38 34 65 78"
+    },
+    {
+      "nom": "Salomé Lefebvre",
+      "genre": "F",
+      "plateforme": "Temple/Altar",
+      "shifts": {
+        "J18": "Soirée Jeudi 16:00→22:00",
+        "V19": "Matin 10:00→17:00",
+        "S20": "Matin 10:00→17:00",
+        "D21": "Matin 10:00→17:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "07 13 31 50 98"
+    },
+    {
+      "nom": "Sixtine Laurent",
+      "genre": "F",
+      "plateforme": "Temple/Altar",
+      "shifts": {
+        "J18": "Nuit Jeudi 20:00→02:00",
+        "V19": "Soir 15:00→22:00",
+        "S20": "Soir 15:00→22:00",
+        "D21": "Soir 15:00→22:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "06 93 01 03 10"
+    },
+    {
+      "nom": "Agathe Adam",
+      "genre": "F",
+      "plateforme": "Temple/Altar",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Nuit 20:00→02:00"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "18"
+      },
+      "telephone": "07 18 34 73 82"
+    },
+    {
+      "nom": "Kylian Morel",
+      "genre": "M",
+      "plateforme": "Temple/Altar",
+      "shifts": {
+        "J18": "Soirée Jeudi 16:00→22:00",
+        "V19": "Matin 10:00→17:00",
+        "S20": "Matin 10:00→17:00",
+        "D21": "Matin 10:00→17:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "07 37 63 11 65"
+    },
+    {
+      "nom": "Antoine Perrier",
+      "genre": "M",
+      "plateforme": "Temple/Altar",
+      "shifts": {
+        "J18": "Nuit Jeudi 20:00→02:00",
+        "V19": "Soir 15:00→22:00",
+        "S20": "Soir 15:00→22:00",
+        "D21": "Soir 15:00→22:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "07 67 01 06 51"
+    },
+    {
+      "nom": "Diego Marchand",
+      "genre": "M",
+      "plateforme": "Temple/Altar",
+      "shifts": {
+        "J18": "Nuit Jeudi 20:00→02:00",
+        "V19": "Non dispo",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Soir 15:00→22:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 0,
+        "S20": 6,
+        "D21": 6,
+        "total": "18"
+      },
+      "telephone": "06 33 87 26 24"
+    },
+    {
+      "nom": "Adrien Millet",
+      "genre": "M",
+      "plateforme": "Temple/Altar",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Nuit 20:00→02:00"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "18"
+      },
+      "telephone": "07 31 78 10 80"
+    },
+    {
+      "nom": "Alexis Morin",
+      "genre": "M",
+      "plateforme": "Temple/Altar",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Repos",
+        "D21": "Repos"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 0,
+        "D21": 0,
+        "total": "6"
+      },
+      "telephone": "06 32 67 73 60"
+    },
+    {
+      "nom": "Lison Garnier",
+      "genre": "F",
+      "plateforme": "Warzone",
+      "shifts": {
+        "J18": "Nuit Jeudi 20:00→02:00",
+        "V19": "Soir 15:00→22:00",
+        "S20": "Soir 15:00→22:00",
+        "D21": "Non dispo"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 0,
+        "total": "18"
+      },
+      "telephone": "06 60 64 74 68"
+    },
+    {
+      "nom": "Alix Robert",
+      "genre": "F",
+      "plateforme": "Warzone",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Soir 15:00→22:00"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "18"
+      },
+      "telephone": "07 23 43 09 80"
+    },
+    {
+      "nom": "Samy Durand",
+      "genre": "M",
+      "plateforme": "Warzone",
+      "shifts": {
+        "J18": "Soirée Jeudi 16:00→22:00",
+        "V19": "Matin 10:00→17:00",
+        "S20": "Matin 10:00→17:00",
+        "D21": "Matin 10:00→17:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "07 00 97 88 20"
+    },
+    {
+      "nom": "Nils Rey",
+      "genre": "M",
+      "plateforme": "Warzone",
+      "shifts": {
+        "J18": "Nuit Jeudi 20:00→02:00",
+        "V19": "Soir 15:00→22:00",
+        "S20": "Soir 15:00→22:00",
+        "D21": "Soir 15:00→22:00"
+      },
+      "heures": {
+        "J18": 6,
+        "V19": 6,
+        "S20": 6,
+        "D21": 6,
+        "total": "24"
+      },
+      "telephone": "06 21 91 36 19"
+    },
+    {
+      "nom": "Noa Lefort",
+      "genre": "M",
+      "plateforme": "Warzone",
+      "shifts": {
+        "J18": "Repos",
+        "V19": "Nuit 20:00→02:00",
+        "S20": "Nuit 20:00→02:00",
+        "D21": "Repos"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 6,
+        "S20": 6,
+        "D21": 0,
+        "total": "12"
+      },
+      "telephone": "06 99 09 16 99"
+    },
+    {
+      "nom": "Robin Garcia",
+      "genre": "M",
+      "plateforme": "Warzone",
+      "shifts": {
+        "J18": "Réserve",
+        "V19": "Réserve",
+        "S20": "Réserve",
+        "D21": "Réserve"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 0,
+        "S20": 0,
+        "D21": 0,
+        "total": "0"
+      },
+      "telephone": "07 43 53 46 24"
+    },
+    {
+      "nom": "Yuna Chevalier",
+      "genre": "F",
+      "plateforme": "Valley",
+      "shifts": {
+        "J18": "—",
+        "V19": "—",
+        "S20": "—",
+        "D21": "—"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 0,
+        "S20": 0,
+        "D21": 0,
+        "total": "0"
+      },
+      "telephone": "07 51 07 99 11"
+    },
+    {
+      "nom": "Margot Fernandez",
+      "genre": "F",
+      "plateforme": "Valley",
+      "shifts": {
+        "J18": "—",
+        "V19": "—",
+        "S20": "—",
+        "D21": "—"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 0,
+        "S20": 0,
+        "D21": 0,
+        "total": "0"
+      },
+      "telephone": "06 84 25 13 54"
+    },
+    {
+      "nom": "Milo Pons",
+      "genre": "M",
+      "plateforme": "Valley",
+      "shifts": {
+        "J18": "—",
+        "V19": "—",
+        "S20": "—",
+        "D21": "—"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 0,
+        "S20": 0,
+        "D21": 0,
+        "total": "0"
+      },
+      "telephone": "06 78 49 80 84"
+    },
+    {
+      "nom": "Mathis Joly",
+      "genre": "M",
+      "plateforme": "Valley",
+      "shifts": {
+        "J18": "—",
+        "V19": "—",
+        "S20": "—",
+        "D21": "—"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 0,
+        "S20": 0,
+        "D21": 0,
+        "total": "0"
+      },
+      "telephone": "06 24 11 82 44"
+    },
+    {
+      "nom": "Clément Vidal",
+      "genre": "M",
+      "plateforme": "Valley",
+      "shifts": {
+        "J18": "—",
+        "V19": "—",
+        "S20": "—",
+        "D21": "—"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 0,
+        "S20": 0,
+        "D21": 0,
+        "total": "0"
+      },
+      "telephone": "06 53 48 74 01"
+    },
+    {
+      "nom": "Noah Petit",
+      "genre": "M",
+      "plateforme": "Valley",
+      "shifts": {
+        "J18": "—",
+        "V19": "—",
+        "S20": "—",
+        "D21": "—"
+      },
+      "heures": {
+        "J18": 0,
+        "V19": 0,
+        "S20": 0,
+        "D21": 0,
+        "total": "0"
+      },
+      "telephone": "07 40 05 24 27"
+    }
+  ],
+  "planning": {
+    "J18": [
+      {
+        "shift": "Soirée Jeudi",
+        "plateforme": "Mainstage",
+        "F": 3,
+        "M": 3,
+        "total": 6,
+        "benevoles": [
+          "Victoria Masson",
+          "Milla Fabre",
+          "Noémie Colin",
+          "Eliott Lambert",
+          "Maël Dubois",
+          "Timéo Lemaire"
+        ],
+        "statut": "✓ OK (6/6 min)"
+      },
+      {
+        "shift": "Soirée Jeudi",
+        "plateforme": "Temple/Altar",
+        "F": 2,
+        "M": 1,
+        "total": 3,
+        "benevoles": [
+          "Mélina Guerin",
+          "Salomé Lefebvre",
+          "Kylian Morel"
+        ],
+        "statut": "✓ OK (3/3 min)"
+      },
+      {
+        "shift": "Soirée Jeudi",
+        "plateforme": "Warzone",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Fanny Chevallier",
+          "Samy Durand"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Soirée Jeudi",
+        "plateforme": "Valley",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Yuna Chevalier",
+          "Mathis Joly"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Mainstage",
+        "F": 3,
+        "M": 3,
+        "total": 6,
+        "benevoles": [
+          "Romane Caron",
+          "Giulia Faure",
+          "Camille Berthier",
+          "Yanis Giraud",
+          "Valentin Nicolas",
+          "Lucas Fontaine"
+        ],
+        "statut": "✓ OK (6/6 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Temple/Altar",
+        "F": 2,
+        "M": 2,
+        "total": 4,
+        "benevoles": [
+          "Sixtine Laurent",
+          "Oriane David",
+          "Antoine Perrier",
+          "Diego Marchand"
+        ],
+        "statut": "✓ OK (4/3 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Warzone",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Lison Garnier",
+          "Nils Rey"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Valley",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Margot Fernandez",
+          "Clément Vidal"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      }
+    ],
+    "V19": [
+      {
+        "shift": "Matin",
+        "plateforme": "Mainstage",
+        "F": 3,
+        "M": 3,
+        "total": 6,
+        "benevoles": [
+          "Victoria Masson",
+          "Milla Fabre",
+          "Noémie Colin",
+          "Eliott Lambert",
+          "Maël Dubois",
+          "Timéo Lemaire"
+        ],
+        "statut": "✓ OK (6/6 min)"
+      },
+      {
+        "shift": "Matin",
+        "plateforme": "Temple/Altar",
+        "F": 2,
+        "M": 1,
+        "total": 3,
+        "benevoles": [
+          "Mélina Guerin",
+          "Salomé Lefebvre",
+          "Kylian Morel"
+        ],
+        "statut": "✓ OK (3/3 min)"
+      },
+      {
+        "shift": "Matin",
+        "plateforme": "Warzone",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Fanny Chevallier",
+          "Samy Durand"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Matin",
+        "plateforme": "Valley",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Léonie Boucher",
+          "Milo Pons"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Mainstage",
+        "F": 3,
+        "M": 3,
+        "total": 6,
+        "benevoles": [
+          "Romane Caron",
+          "Giulia Faure",
+          "Elisa Renault",
+          "Yanis Giraud",
+          "Valentin Nicolas",
+          "Bastien Girard"
+        ],
+        "statut": "✓ OK (6/6 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Temple/Altar",
+        "F": 2,
+        "M": 1,
+        "total": 3,
+        "benevoles": [
+          "Sixtine Laurent",
+          "Oriane David",
+          "Antoine Perrier"
+        ],
+        "statut": "✓ OK (3/3 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Warzone",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Lison Garnier",
+          "Nils Rey"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Valley",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Yuna Chevalier",
+          "Mathis Joly"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Mainstage",
+        "F": 3,
+        "M": 3,
+        "total": 6,
+        "benevoles": [
+          "Stella Fabre",
+          "Jade Rousseau",
+          "Inès Mercier",
+          "Quentin Meunier",
+          "Théo Blanchard",
+          "Raphaël Costa"
+        ],
+        "statut": "✓ OK (6/6 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Temple/Altar",
+        "F": 1,
+        "M": 2,
+        "total": 3,
+        "benevoles": [
+          "Agathe Adam",
+          "Adrien Millet",
+          "Alexis Morin"
+        ],
+        "statut": "✓ OK (3/3 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Warzone",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Alix Robert",
+          "Noa Lefort"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Valley",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Margot Fernandez",
+          "Clément Vidal"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      }
+    ],
+    "S20": [
+      {
+        "shift": "Matin",
+        "plateforme": "Mainstage",
+        "F": 3,
+        "M": 3,
+        "total": 6,
+        "benevoles": [
+          "Victoria Masson",
+          "Milla Fabre",
+          "Noémie Colin",
+          "Eliott Lambert",
+          "Maël Dubois",
+          "Timéo Lemaire"
+        ],
+        "statut": "✓ OK (6/6 min)"
+      },
+      {
+        "shift": "Matin",
+        "plateforme": "Temple/Altar",
+        "F": 2,
+        "M": 1,
+        "total": 3,
+        "benevoles": [
+          "Mélina Guerin",
+          "Salomé Lefebvre",
+          "Kylian Morel"
+        ],
+        "statut": "✓ OK (3/3 min)"
+      },
+      {
+        "shift": "Matin",
+        "plateforme": "Warzone",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Fanny Chevallier",
+          "Samy Durand"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Matin",
+        "plateforme": "Valley",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Léonie Boucher",
+          "Milo Pons"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Mainstage",
+        "F": 3,
+        "M": 3,
+        "total": 6,
+        "benevoles": [
+          "Romane Caron",
+          "Giulia Faure",
+          "Elisa Renault",
+          "Yanis Giraud",
+          "Valentin Nicolas",
+          "Bastien Girard"
+        ],
+        "statut": "✓ OK (6/6 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Temple/Altar",
+        "F": 2,
+        "M": 1,
+        "total": 3,
+        "benevoles": [
+          "Sixtine Laurent",
+          "Oriane David",
+          "Antoine Perrier"
+        ],
+        "statut": "✓ OK (3/3 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Warzone",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Lison Garnier",
+          "Nils Rey"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Valley",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Yuna Chevalier",
+          "Clément Vidal"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Mainstage",
+        "F": 3,
+        "M": 3,
+        "total": 6,
+        "benevoles": [
+          "Stella Fabre",
+          "Jade Rousseau",
+          "Inès Mercier",
+          "Quentin Meunier",
+          "Théo Blanchard",
+          "Raphaël Costa"
+        ],
+        "statut": "✓ OK (6/6 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Temple/Altar",
+        "F": 1,
+        "M": 2,
+        "total": 3,
+        "benevoles": [
+          "Agathe Adam",
+          "Diego Marchand",
+          "Adrien Millet"
+        ],
+        "statut": "✓ OK (3/3 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Warzone",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Alix Robert",
+          "Noa Lefort"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Nuit",
+        "plateforme": "Valley",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Margot Fernandez",
+          "Noah Petit"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      }
+    ],
+    "D21": [
+      {
+        "shift": "Matin",
+        "plateforme": "Mainstage",
+        "F": 3,
+        "M": 3,
+        "total": 6,
+        "benevoles": [
+          "Victoria Masson",
+          "Milla Fabre",
+          "Romane Caron",
+          "Eliott Lambert",
+          "Maël Dubois",
+          "Timéo Lemaire"
+        ],
+        "statut": "✓ OK (6/6 min)"
+      },
+      {
+        "shift": "Matin",
+        "plateforme": "Temple/Altar",
+        "F": 2,
+        "M": 1,
+        "total": 3,
+        "benevoles": [
+          "Mélina Guerin",
+          "Salomé Lefebvre",
+          "Kylian Morel"
+        ],
+        "statut": "✓ OK (3/3 min)"
+      },
+      {
+        "shift": "Matin",
+        "plateforme": "Warzone",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Fanny Chevallier",
+          "Samy Durand"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Matin",
+        "plateforme": "Valley",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Léonie Boucher",
+          "Milo Pons"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Mainstage",
+        "F": 3,
+        "M": 3,
+        "total": 6,
+        "benevoles": [
+          "Giulia Faure",
+          "Elisa Renault",
+          "Stella Fabre",
+          "Valentin Nicolas",
+          "Bastien Girard",
+          "Quentin Meunier"
+        ],
+        "statut": "✓ OK (6/6 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Temple/Altar",
+        "F": 1,
+        "M": 2,
+        "total": 3,
+        "benevoles": [
+          "Sixtine Laurent",
+          "Antoine Perrier",
+          "Diego Marchand"
+        ],
+        "statut": "✓ OK (3/3 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Warzone",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Alix Robert",
+          "Nils Rey"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      },
+      {
+        "shift": "Soir",
+        "plateforme": "Valley",
+        "F": 1,
+        "M": 1,
+        "total": 2,
+        "benevoles": [
+          "Yuna Chevalier",
+          "Mathis Joly"
+        ],
+        "statut": "✓ OK (2/2 min)"
+      }
+    ]
+  }
+}
