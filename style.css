@@ -1160,10 +1160,25 @@ body {
   }
 
   #view-login.active {
-    margin-left: 0; /* login is full-width, no sidebar */
-    max-width: 480px;
+    margin-left: 0;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  #view-login.active .login {
+    max-width: 400px;
     padding: 60px 48px;
-    margin: 10vh auto;
+    margin: 0;
+    min-height: auto;
+  }
+  #view-login.active .login__logo {
+    max-width: 280px;
+    margin-bottom: var(--space-2xl);
   }
 
   /* ─── SIDEBAR DESKTOP ─── */
@@ -1301,15 +1316,10 @@ body {
     font-size: 20px;
   }
 
-  /* Hide header nav buttons and floating contact bar on desktop */
+  /* Hide header nav buttons on desktop */
   .header .btn-sm,
   .header__actions {
     display: none;
-  }
-
-  .login__logo {
-    max-width: 280px;
-    margin-bottom: var(--space-2xl);
   }
 
   .form-group label {

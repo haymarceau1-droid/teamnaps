@@ -96,6 +96,10 @@
     document.querySelectorAll('.view').forEach(function (v) { v.classList.remove('active'); });
     var view = $(viewId);
     if (view) view.classList.add('active');
+    var sidebar = document.getElementById('sidebar');
+    if (sidebar) {
+      sidebar.style.display = (viewId === 'view-login' || viewId === 'view-offline') ? 'none' : '';
+    }
     _currentView = viewId;
     if (typeof gsap !== 'undefined') {
       gsap.fromTo(view, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.35, ease: 'power2.out' });
