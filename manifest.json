@@ -1,0 +1,17 @@
+{
+  "name": "Stage PMR/PSH — Hellfest",
+  "short_name": "Stage PMR",
+  "description": "Application de planning pour l'équipe Stage PMR/PSH du Hellfest",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0D0D0D",
+  "theme_color": "#0D0D0D",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0D0D0D">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.json">
+  <title>Stage PMR/PSH — Hellfest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader" class="loader">
+    <div class="loader__spinner"></div>
+    <div class="loader__text">Chargement...</div>
+  </div>
+
+  <!-- OFFLINE BANNER -->
+  <div id="offline-banner" class="offline-banner">Données non actualisées (mode hors-ligne)</div>
+
+  <!-- ===== VIEW: LOGIN ===== -->
+  <section id="view-login" class="view">
+    <div class="login">
+      <div class="login__logo">
+        <img src="logo.png" alt="Hellfest" class="login__logoSvg">
+        <p>Stage PMR / PSH</p>
+      </div>
+      <div class="form-group">
+        <label for="login-phone">Numéro de téléphone</label>
+        <input type="tel" id="login-phone" maxlength="10" placeholder="0612345678" autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <label for="login-role">Poste</label>
+        <select id="login-role">
+          <option value="B">Bénévole</option>
+          <option value="CE">Chef d'équipe</option>
+          <option value="R">Responsable</option>
+          <option value="A">Admin</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" id="login-btn">Se connecter</button>
+      <div class="error-msg" id="login-error"></div>
+    </div>
+  </section>
+
+  <!-- ===== VIEW: BÉNÉVOLE ===== -->
+  <section id="view-benevole" class="view">
+    <div class="header header--centered">
+      <img src="logo.png" alt="Hellfest" class="header__logo--lg">
+      <div class="header__row">
+        <div>
+          <div class="header__title" id="benevole-name"></div>
+          <div class="header__sub">Bénévole</div>
+        </div>
+        <div style="display:flex;gap:6px">
+          <button class="btn btn-sm btn-secondary" id="calendar-btn-b">Calendrier</button>
+          <button class="btn btn-sm btn-secondary" id="logout-btn-b">Déconnexion</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="shift-alert" class="alert-shift" style="display:none"></div>
+
+    <button class="btn btn-secondary" id="map-btn" style="width:100%;margin-bottom:var(--space-lg)">&#128204; Consulter le plan</button>
+
+    <div class="section-title">Shifts du jour</div>
+    <div id="benevole-shifts"></div>
+
+    <div class="section-title" style="margin-top:24px">Contacts</div>
+    <div class="card">
+      <div style="font-size:var(--text-sm);margin-bottom:8px;color:var(--color-text-muted)">
+        <span>CE Stage</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span id="contact-ce-name">Anne</span>
+        <a id="contact-ce-phone" href="#" style="color:var(--color-primary);text-decoration:none;font-family:var(--font-mono)"></a>
+      </div>
+      <div style="border-top:1px solid var(--color-border);margin:8px 0;padding-top:8px">
+        <div style="font-size:var(--text-sm);margin-bottom:8px;color:var(--color-text-muted)">
+          <span>Responsable</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span id="contact-r-name">Cindy</span>
+          <a id="contact-r-phone" href="#" style="color:var(--color-primary);text-decoration:none;font-family:var(--font-mono)"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIEW: RESPONSABLE ===== -->
+  <section id="view-responsable" class="view">
+    <div class="header">
+      <div class="header__left">
+        <img src="logo.png" alt="Hellfest" class="header__logo">
+        <div>
+          <div class="header__title" id="respo-name"></div>
+          <div class="header__sub" id="respo-role"></div>
+        </div>
+      </div>
+      <div style="display:flex;gap:6px">
+        <button class="btn btn-sm btn-secondary" id="calendar-btn-r">Calendrier</button>
+        <button class="btn btn-sm btn-secondary" id="admin-btn">Admin</button>
+        <button class="btn btn-sm btn-secondary" id="logout-btn-r">Déconnexion</button>
+      </div>
+    </div>
+
+    <button class="btn btn-secondary" id="map-btn-r" style="width:100%;margin-bottom:var(--space-lg)">&#128204; Consulter le plan</button>
+
+    <div class="section-title">Couverture</div>
+    <div class="coverage-grid" id="coverage-grid"></div>
+
+    <div class="section-title">Bénévoles</div>
+    <div class="search-bar">
+      <input type="search" id="respo-search" placeholder="Rechercher par nom ou prénom…">
+    </div>
+    <div class="filter-chips" id="filter-chips"></div>
+    <div id="respo-list" class="respo-list"></div>
+  </section>
+
+  <!-- ===== VIEW: FICHE BÉNÉVOLE ===== -->
+  <section id="view-fiche" class="view">
+    <div class="header" style="border-bottom:none;margin-bottom:8px;padding-bottom:0">
+      <div class="header__left">
+        <img src="logo.png" alt="Hellfest" class="header__logo">
+        <div class="header__title" style="font-size:var(--text-lg)">Fiche</div>
+      </div>
+    </div>
+    <div class="back-row">
+      <button id="fiche-back" aria-label="Retour">&#8592; Retour</button>
+    </div>
+
+    <div class="fiche-header">
+      <div class="avatar" id="fiche-avatar"></div>
+      <div>
+        <div class="header__title" id="fiche-name"></div>
+        <div class="header__sub" id="fiche-role-label"></div>
+      </div>
+    </div>
+
+    <div class="fiche-detail">
+      <div class="fiche-detail__label">Téléphone</div>
+      <div class="fiche-detail__value"><a id="fiche-phone" href="#"></a></div>
+    </div>
+    <div class="fiche-detail">
+      <div class="fiche-detail__label">Scène</div>
+      <div class="fiche-detail__value" id="fiche-scene"></div>
+    </div>
+    <div class="fiche-detail">
+      <div class="fiche-detail__label">Genre</div>
+      <div class="fiche-detail__value" id="fiche-genre"></div>
+    </div>
+    <div class="fiche-detail">
+      <div class="fiche-detail__label">Plateforme</div>
+      <div class="fiche-detail__value" id="fiche-plateforme"></div>
+    </div>
+
+    <div class="section-title" style="margin-top:20px">Shifts du jour</div>
+    <div id="fiche-shifts"></div>
+  </section>
+
+  <!-- ===== VIEW: CALENDRIER ===== -->
+  <section id="view-calendar" class="view">
+    <div class="header">
+      <div class="header__left">
+        <img src="logo.png" alt="Hellfest" class="header__logo">
+        <div class="header__title">Calendrier</div>
+      </div>
+      <button class="btn btn-sm btn-secondary" id="calendar-back">Retour</button>
+    </div>
+
+    <div class="cal-mode">
+      <button class="cal-mode__btn cal-mode__btn--active" data-mode="4days">4 Jours</button>
+      <button class="cal-mode__btn" data-mode="day">Jour</button>
+    </div>
+
+    <button class="btn btn-primary" id="cal-pdf-btn" style="margin-bottom:var(--space-sm)">&#8595; Télécharger PDF</button>
+
+    <div class="cal-print-header">
+      <h1>Calendrier Hellfest</h1>
+      <span id="cal-print-subtitle">Stage PMR / PSH</span>
+    </div>
+
+    <div id="calendar-content"></div>
+  </section>
+
+  <!-- ===== VIEW: ADMIN ===== -->
+  <section id="view-admin" class="view">
+    <div class="header">
+      <div class="header__left">
+        <img src="logo.png" alt="Hellfest" class="header__logo">
+        <div>
+          <div class="header__title">Admin</div>
+          <div class="header__sub">Planning complet</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:6px">
+        <button class="btn btn-sm btn-secondary" id="logout-btn-a">Déconnexion</button>
+      </div>
+    </div>
+
+    <div class="search-bar">
+      <input type="search" id="admin-search" placeholder="Rechercher un bénévole…">
+    </div>
+    <div class="filter-chips" id="admin-chips"></div>
+    <div id="admin-list"></div>
+  </section>
+
+  <!-- ===== VIEW: OFFLINE ===== -->
+  <section id="view-offline" class="view">
+    <div class="offline-view">
+      <div class="offline-view__icon">&#9888;</div>
+      <h2>Pas de réseau</h2>
+      <p>Aucune donnée n'est disponible hors-ligne. Reconnectez-vous au réseau et rechargez la page.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT BAR (persistent) -->
+  <div class="contact-bar" id="contact-bar">
+    <a id="contact-bar-ce" href="#">
+      <span>CE Stage</span>
+    </a>
+    <a id="contact-bar-r" href="#">
+      <span>Responsable</span>
+    </a>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" style="display:none">
+    <div class="lightbox__backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox__content">
+      <div class="lightbox__toolbar">
+        <a class="lightbox__dl" href="image.png" download="plan-hellfest.png">&#8595; Télécharger</a>
+        <button class="lightbox__close" id="lightbox-close">&times;</button>
+      </div>
+      <img src="image.png" alt="Plan" class="lightbox__img">
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

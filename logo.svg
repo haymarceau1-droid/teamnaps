@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="#00a530">
+  <!-- Cross/axe motif -->
+  <path d="M180 20 L220 20 L220 100 L300 100 L300 140 L220 140 L220 220 L180 220 L180 140 L100 140 L100 100 L180 100 Z"/>
+  <!-- Gothic arch accent -->
+  <path d="M160 100 L200 60 L240 100" stroke="#00a530" stroke-width="6" fill="none"/>
+  <path d="M140 140 L200 80 L260 140" stroke="#00a530" stroke-width="4" fill="none" opacity="0.5"/>
+</svg>
